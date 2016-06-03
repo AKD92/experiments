@@ -50,7 +50,7 @@ void print_byte_array_as_ascii_art(unsigned char *byte_array, DibHeader* dib_hea
 
     int width = dib_header->img_width;
     int height = dib_header->img_height;
-    dib_header->pixel_array_size -= 2; //2 btyes padding at the end of the byte array
+//    dib_header->pixel_array_size -= 2; //2 btyes padding at the end of the byte array
     int scan_line_size_in_bytes = dib_header->pixel_array_size / dib_header->img_height;
     char pixel_array[height][width];
     //0000 0000 0000 1100 1100 0111 0000 000
